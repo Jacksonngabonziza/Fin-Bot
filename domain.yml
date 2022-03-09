@@ -1,0 +1,93 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - become_agent
+  - Bank_creation
+  - Services
+  - Opening_closing_hours
+  - open_an_account
+  - Talk_to_operator
+  - Bank_adress
+  - thanks
+
+responses:
+  utter_greet:
+   
+  - text: |
+         Hello, My name is Finbot
+         I am a financial chatbot designed by Digital Umuganda
+         how can i help you?
+#     image: "https://i0.wp.com/digitalumuganda.com/wp-content/uploads/2019/09/LOGO-DIGITAL-UMUGANDA.png"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: |
+        I am a Bank bot with these services i can hellp you with all banking services 
+        :-)
+  utter_thanks:
+  - text: Thanks for using our service ,see you again :)
+  utter_become_agent:
+  - text:  |
+        To become a bank agent must fulfill the following:
+        - A valid criminal record of the applicant 
+        - A bank statement for at least 6 previous months
+        - A letter of introduction from local authority where the applicant operates from
+        - A copy of certificate of incorporation or certificate of registration of business name as applicable
+        - ID Copies of principal applicant
+        - Agency banking application form duly completed and signed by the applicant
+        - Pre-signed Equity Agent Contract
+        - Valid business license Patente-2 latest years
+        - Two recent passport size photos for every applicant
+        - Two business premise photos inside and outside
+        For more information please dail 4346
+  utter_Bank_adress:
+  - text: |
+        19KG kigali Rwanda
+        +250788747553
+        Email: bank@du.com
+  utter_services:
+  - text: |
+        - Personal account
+        - Business account
+        - Loan
+        - Mortgage
+        - Credit card 
+  utter_Opening_closing_hours:
+  - text: |
+        In week days we are open from 8am to 5 pm
+        In weekends we are open from 9am to 3pm
+        Note: Our ATM are active 24/7
+  utter_open_an_account:
+  - text: |
+        To open a Current account you need to have the following
+        • Provide with your proof of identity.
+        • Fill the KYC form provided by the bank.
+
+        To Open a student's Saving acount
+        •A valid identification document and passport size photo are the requirements for opening this account
+
+  utter_Talk_to_operator:
+  - text: |
+        To talk to our customer care operators use any of these chanels
+        Tell: +250788747553
+        Email: bank@du.com
+  utter_Bank_creation:
+  - text: |
+        This bank was officialy open on 1/jan/1982
+        We have over 30 years of experience serving our clients
+  utter_out_of_scope:
+  - text: Sorry,I am not trained to answer this type of question.
+  
+  utter_default:
+  - text: I didn't quite understand that. Could you rephrase?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,87 @@
+# version: "3.0"
+
+# stories:
+
+# - story:
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: bot_challenge
+  
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+ 
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: 
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+
+
+
+#   steps:
+#   - intent: goodbye
+#   - action: utter_goodbye
+#   - action: utter_thanks
+# - rule: greet customer
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+# - rule: respond with requirements to become an agent
+#   steps:
+#   - intent: become_agent
+#   - action: utter_become_agent
+# - rule: bank address
+#   steps:
+#   - intent: Bank_adress
+#   - action: utter_Bank_adress
+# - rule: bank services
+#   steps:
+#   - intent: Services
+#   - action: utter_services
+# - rule: bank opening and closing hours
+#   steps:
+#   - intent: Opening_closing_hours
+#   - action: utter_Opening_closing_hours
+# - rule: bank account
+#   steps:
+#   - intent: open_an_account
+#   - action: utter_open_an_account
+# - rule: bank operator
+#   steps:
+#   - intent: Talk_to_operator
+#   - action: utter_Talk_to_operator
+# - rule: bank creation
+#   steps:
+#   - intent: Bank_creation
+#   - action: utter_Bank_creation
+  
+# - rule: say thanks
+#   steps:
+#   - intent: thanks
+#   - action: utter_thanks
+# utter_out_of_scope:
+# - rule: say out of scope
+#   steps:
+#   - intent: out_of_scope
+#   - action: utter_out_of_scope
+# - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+#   steps:
+#   - intent: nlu_fallback
+#   - action: utter_default
