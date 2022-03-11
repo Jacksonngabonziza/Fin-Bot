@@ -349,25 +349,25 @@ nlu:
 - intent: Agent_location
   examples: |
     - i want a nearby agent
-    - i need an agent in [kicukiro] (location)
+    - i need an agent in kicukiro
     - is there any agent around here?
     - link me up with a nearby agent please
     - i need to withdraw from an agent ,please help me
     - i need a help ,any agent around here?
     - can you direct me to a near by agent
-    - Do you have an agent here in [nyarugenge](location)
-    - can i have an the contact of a bank agent in [Musanze](location)
+    - Do you have an agent here in nyarugenge
+    - can i have an the contact of a bank agent in Musanze
     - How far is the nearest agent 
     - i want an agent 
     - give me the phone number of the nearest agents
 - intent: branches
   examples: |
-    - can i see all branches in [nyarugenge](district)
-    - i need to know the branches in [kicukiro](district)
-    - a list of all branches in [nyagatare](district)
+    - can i see all branches in nyarugenge
+    - i need to know the branches in kicukiro
+    - a list of all branches in nyagatare
     - show me all your branches
-    - do you have a branche in [huye](district)
-    - tell me the nearest branches,i am in [kayonza](district)
-    - where can i find a branch in [kirehe](district)
+    - do you have a branche in huye
+    - tell me the nearest branches,i am in kayonza
+    - where can i find a branch in kirehe
     -  near branches?
     
