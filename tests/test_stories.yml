@@ -2,79 +2,71 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: salutation + services
   steps:
   - user: |
       hello there!
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      which service do you provide?
+    intent: Services
+  - action: utter_services
 
-- story: happy path 2
+- story: become an agent
   steps:
   - user: |
       hello there!
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      how can i become your bank agent?
+    intent: become_agent
+  - action: utter_become_agent
   - user: |
       bye-bye!
     intent: goodbye
   - action: utter_goodbye
 
-- story: sad path 1
+- story: opening account
   steps:
   - user: |
       hello
     intent: greet
   - action: utter_greet
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
+      what are the requirements to open account?
+  #   intent: open_an_account
+  # - action: utter_open_an_account
+    intent: goodbye
   - action: utter_goodbye
 
-- story: sad path 3
+- story: salutation + opening and closing hours
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      when do you open in weekdays?
+    intent: Opening_closing_hours
+  - action: utter_Opening_closing_hours
+  - action: utter_thanks
+
+- story: greet + link to operator
   steps:
   - user: |
       hi
     intent: greet
   - action: utter_greet
   - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      i need to talk to a human
+    intent: Talk_to_operator
+  - action: utter_Talk_to_operator
   - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+      thank you
+    intent: thanks
+  - action: utter_thanks
 
 - story: say goodbye
   steps:

@@ -44,7 +44,10 @@ rules:
   steps:
   - intent: Bank_creation
   - action: utter_Bank_creation
-  
+- rule: get nearest agent
+  steps:
+  - intent: Agent_location
+  - action: utter_Agent_location
 - rule: say thanks
   steps:
   - intent: thanks

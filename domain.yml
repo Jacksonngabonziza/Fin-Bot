@@ -29,7 +29,8 @@ responses:
 
   utter_iamabot:
   - text: |
-        I am a Bank bot with these services i can hellp you with all banking services 
+        I am a financial bot 
+        i can hellp you with all banking services 
         :-)
   utter_thanks:
   - text: Thanks for using our service ,see you again :)
@@ -87,7 +88,11 @@ responses:
   
   utter_default:
   - text: I didn't quite understand that. Could you rephrase?
-
+  utter_Agent_location:
+  -  text: |
+         Name:test agent
+         tell:078864384
+         address: kimironko
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
