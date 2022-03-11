@@ -14,6 +14,8 @@ intents:
   - Talk_to_operator
   - Bank_adress
   - thanks
+  - Agent_location
+  - branches
 
 responses:
   utter_greet:
@@ -88,11 +90,18 @@ responses:
   
   utter_default:
   - text: I didn't quite understand that. Could you rephrase?
+#   utter_ask_location:
+#   -  text: Which district ?
   utter_Agent_location:
   -  text: |
-         Name:test agent
-         tell:078864384
-         address: kimironko
+        • Name:test agent
+        • tell:078864384
+        • address: kimironko
+  utter_branches:
+  - text: |
+       These are the nearest branches
+       • Remera branch   078787665
+       • kisimenti branch  07885454
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

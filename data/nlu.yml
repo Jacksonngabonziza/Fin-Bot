@@ -360,4 +360,14 @@ nlu:
     - How far is the nearest agent 
     - i want an agent 
     - give me the phone number of the nearest agents
+- intent: branches
+  examples: |
+    - can i see all branches in [nyarugenge](district)
+    - i need to know the branches in [kicukiro](district)
+    - a list of all branches in [nyagatare](district)
+    - show me all your branches
+    - do you have a branche in [huye](district)
+    - tell me the nearest branches,i am in [kayonza](district)
+    - where can i find a branch in [kirehe](district)
+    -  near branches?
     

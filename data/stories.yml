@@ -71,6 +71,12 @@ stories:
   steps:
   - intent: out_of_scope
   - action: utter_out_of_scope
+  
+- story: show the  nearest branches
+  steps:
+  - intent: branches
+  - action: utter_branches
+  
 
 - story: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
