@@ -1,6 +1,39 @@
 version: "3.0"
 
 nlu:
+
+- lookup: district
+  examples: |
+    - Bugesera
+    - Gatsibo
+    - Kayonza
+    - Kirehe
+    - Ngoma
+    - Nyagatare
+    - Rwamagana
+    - Gasabo
+    - Kicukiro
+    - Nyarugenge
+    - Burera
+    - Gakenke
+    - Gicumbi
+    - Musanze
+    - Rulindo
+    - Gisagara
+    - Huye
+    - Kamonyi
+    - Muhanga
+    - Nyamagabe
+    - Nyanza
+    - Nyaruguru
+    - Ruhango
+    - Karongi
+    - Ngororero
+    - Nyabihu
+    - Nyamasheke
+    - Rubavu
+    - Rusizi
+    - Rutsiro
 - intent: greet
   examples: |
     - hey
@@ -362,12 +395,14 @@ nlu:
     - give me the phone number of the nearest agents
 - intent: branches
   examples: |
-    - can i see all branches in nyarugenge
-    - i need to know the branches in kicukiro
-    - a list of all branches in nyagatare
+    - can i see all branches in [nyarugenge](district)
+    - i need to know the branches in [kicukiro](district)
+    - a list of all branches in [nyagatare](district)
     - show me all your branches
-    - do you have a branche in huye
-    - tell me the nearest branches,i am in kayonza
-    - where can i find a branch in kirehe
+    - do you have a branche in [huye](district)
+    - tell me the nearest branches,i am in [kayonza](district)
+    - where can i find a branch in [kirehe](district)
     -  near branches?
-    
+    - where is your branch in [gasabo](district)
+    - show the branches in [nyarugenge](district)
+    - list  of branches in [kicukiro](district)

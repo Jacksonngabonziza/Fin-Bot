@@ -16,9 +16,15 @@ intents:
   - thanks
   - Agent_location
   - branches
+entities:
+  - district
 
-responses:
-  utter_greet:
+# slots:
+#   district:
+#     type: text
+#     influence_conversation: true
+# responses:
+#   utter_greet:
    
   - text: |
          Hello, My name is Finbot
