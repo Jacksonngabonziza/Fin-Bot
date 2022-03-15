@@ -47,7 +47,7 @@ rules:
 - rule: get nearest agent
   steps:
   - intent: Agent_location
-  - action: utter_Agent_location
+  - action: action_agents
 - rule: say thanks
   steps:
   - intent: thanks
