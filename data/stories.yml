@@ -75,8 +75,11 @@ stories:
 - story: show the  nearest branches
   steps:
   - intent: branches
-  - action: utter_branches
-  
+  - action: action_branch
+- story: get nearest agent
+  steps:
+  - intent: Agent_location
+  - action: action_agents 
 
 - story: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:

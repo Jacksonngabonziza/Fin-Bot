@@ -1,0 +1,6 @@
+[
+  {
+    "name": "district",
+    "pattern": "(\\bBugesera\\b|\\bGatsibo\\b|\\bKayonza\\b|\\bKirehe\\b|\\bNgoma\\b|\\bNyagatare\\b|\\bRwamagana\\b|\\bGasabo\\b|\\bKicukiro\\b|\\bNyarugenge\\b|\\bBurera\\b|\\bGakenke\\b|\\bGicumbi\\b|\\bMusanze\\b|\\bRulindo\\b|\\bGisagara\\b|\\bHuye\\b|\\bKamonyi\\b|\\bMuhanga\\b|\\bNyamagabe\\b|\\bNyanza\\b|\\bNyaruguru\\b|\\bRuhango\\b|\\bKarongi\\b|\\bNgororero\\b|\\bNyabihu\\b|\\bNyamasheke\\b|\\bRubavu\\b|\\bRusizi\\b|\\bRutsiro\\b)"
+  }
+]

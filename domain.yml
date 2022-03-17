@@ -16,31 +16,25 @@ intents:
   - thanks
   - Agent_location
   - branches
-actions:
-- action_agents
+#custom
 entities:
-- district
-
+  - district
 slots:
   district:
-    type: list
+    type: any
     influence_conversation: false
     mappings:
-    - type: custom
-
-
+    - type: from_entity
+      entity: district
 responses:
   utter_greet:
-   
   - text: |
          Hello, My name is Finbot
          I am a financial chatbot designed by Digital Umuganda
          how can i help you?
 #     image: "https://i0.wp.com/digitalumuganda.com/wp-content/uploads/2019/09/LOGO-DIGITAL-UMUGANDA.png"
-
   utter_goodbye:
   - text: "Bye"
-
   utter_iamabot:
   - text: |
         I am a financial bot 
@@ -84,10 +78,8 @@ responses:
         To open a Current account you need to have the following
         • Provide with your proof of identity.
         • Fill the KYC form provided by the bank.
-
         To Open a student's Saving acount
         •A valid identification document and passport size photo are the requirements for opening this account
-
   utter_Talk_to_operator:
   - text: |
         To talk to our customer care operators use any of these chanels
@@ -102,8 +94,6 @@ responses:
   
   utter_default:
   - text: I didn't quite understand that. Could you rephrase?
-#   utter_ask_location:
-#   -  text: Which district ?
   utter_Agent_location:
   -  text: |
         • Name:test agent
@@ -114,6 +104,9 @@ responses:
        These are the nearest branches
        • Remera branch   078787665
        • kisimenti branch  07885454
+actions:
+- action_agents
+- action_branch
 session_config:
-  session_expiration_time: 60
+  session_expiration_time: 600000
   carry_over_slots_to_new_session: true
