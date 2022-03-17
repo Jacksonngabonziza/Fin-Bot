@@ -8,3 +8,12 @@ forward:
 - 5006:5006
 reverse:
 - 8080:8080
+
+name: rasa-actions-server
+command: bash
+volumes: 
+- /root/.cache/pip
+sync:
+- .:/app
+forward:
+- 5055:5055
