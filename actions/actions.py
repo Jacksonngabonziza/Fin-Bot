@@ -82,7 +82,7 @@ class ActionAgents(Action):
         else:  
             dispatcher.utter_message( f"  We don't have any agent yet in {district} but very soon we are adding more data.")
         district=""   
-        return[SlotSet("district",None)]
+        return
 
 
 class ActionBranch(Action):
@@ -100,4 +100,4 @@ class ActionBranch(Action):
         else:  
             dispatcher.utter_message(f" We don't have a branch yet in {district} but very soon we are adding more data.")
         district=""        
-        return[SlotSet("district",None)]
+        return
