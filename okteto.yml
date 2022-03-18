@@ -14,6 +14,6 @@ command: bash
 volumes: 
 - /root/.cache/pip
 sync:
-- .:/app
+- .:/app/actions
 forward:
 - 5055:5055
