@@ -11,4 +11,5 @@ reverse:
 
 name: rasa-actions-server
 command: bash
+forward:
 - 5055:5055
