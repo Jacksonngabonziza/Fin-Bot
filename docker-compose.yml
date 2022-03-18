@@ -22,20 +22,24 @@ services:
     public: true
     networks:
     - all
-
-  rasa-actions-server:
-    image: rasa-bot:latest
-    working_dir: /app
+  rasa-actions:
     build: "./"
+    image: rasa-bot:latest
     restart: always
+    working_dir: /app/actions
     volumes:
+<<<<<<< HEAD
     - ./actions:/app/actions
     - ./utils:/app/utils
     command: bash -c "rasa run actions"
+=======
+      - ./actions:/app/actions
+    command: ["rasa","run","actions"]
+>>>>>>> 5b4c308460f6277b0507705a245d236066d94cc8
     ports:
     - '5055:5055'
     networks:
-    - all
+      - all
 
 networks:
   all:

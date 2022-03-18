@@ -11,9 +11,12 @@ reverse:
 
 name: rasa-actions-server
 command: bash
+<<<<<<< HEAD
 volumes: 
 - /root/.cache/pip
 sync:
 - .:/app/actions
+=======
+>>>>>>> 5b4c308460f6277b0507705a245d236066d94cc8
 forward:
 - 5055:5055
