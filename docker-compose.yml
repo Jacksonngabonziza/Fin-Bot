@@ -6,9 +6,8 @@ services:
     restart: always
     working_dir: /app
     volumes:
-      - ./models:/app/models
-      - ./data:/app/data
       - ./actions:/app/actions
+      - ./data:/app/data
     command: bash -c "rm -rf models/* && rasa train && rasa run --enable-api --cors \"*\" --debug"
     ports:
       - '5005:5005'
