@@ -106,7 +106,7 @@ responses:
        • kisimenti branch  07885454
 actions:
 - action_agents
-- action_bra
+- action_branch
 session_config:
   session_expiration_time: 600000
   carry_over_slots_to_new_session: true

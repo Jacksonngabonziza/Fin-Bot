@@ -60,7 +60,7 @@ rules:
 - rule: show the  nearest branches
   steps:
   - intent: branches
-  - action: action_bra
+  - action: action_branch
   
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
