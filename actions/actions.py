@@ -101,3 +101,21 @@ class ActionBranch(Action):
             dispatcher.utter_message(f" We don't have a branch yet in {district} but very soon we are adding more data.")
         district=""        
         return
+
+class ActionBranch(Action):
+     def name(self) ->Text:
+        return "action_bra"
+     def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        district=tracker.get_slot("district")             
+        # result=getbranch(district)
+        result=['test','test1','test2']
+        if len(result)>1:
+            for branch in result:
+                mystr=""
+                mystr+=' '.join(branch)
+                dispatcher.utter_message(f" {mystr}")
+        else:  
+            dispatcher.utter_message(f" We don't have a branch yet in {district} but very soon we are adding more data.")
+        district=""        
+        return
