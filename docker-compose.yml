@@ -30,7 +30,7 @@ services:
     volumes:
     - ./actions:/app/actions
     - ./utils:/app/utils
-    command: bash -c "rasa run actions"
+    command: bash -c "rasa run actions --debug"
     ports:
     - '5055:5056'
     networks:
